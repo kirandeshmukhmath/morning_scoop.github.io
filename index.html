@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home</title>
+    <link rel="icon" href="images/A/titleimg.png" type="image/icon type">
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--
+
+Tooplate 2129 Crispy Kitchen
+
+https://www.tooplate.com/view/2129-crispy-kitchen
+
+-->
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                transition: background-color 0.5s, color 0.5s;
+                /* Set initial theme colors */
+                background-color: #ffffff;
+                /* Light background color */
+                color: #000000;
+                /* Dark text color */
+            }
+
+            /* Define styles for the dark theme */
+            body.dark-mode {
+                background-color: #000000;
+                /* Dark background color */
+                color: #ffffff;
+                /* Light text color */
+            }
+
+            /* Style the button */
+            #theme-toggle {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                padding: 10px;
+                cursor: pointer;
+                border: none;
+                background-color: #000000;
+                /* Blue button color */
+                color: #ffffff;
+                /* White text color */
+                border-radius: 5px;
+            }
+        </style>
+        <title>Dark Mode Toggle</title>
+    </head>
+
+    <body>
+
+        <!-- Button to toggle theme -->
+        <button id="theme-toggle" onclick="toggleTheme()">Dark Mode</button>
+
+        <!-- Your website content goes here -->
+
+        <script>
+            // Function to toggle between light and dark themes
+            function toggleTheme() {
+                document.body.classList.toggle('dark-mode');
+            }
+        </script>
+
+    </body>
+
+    </html>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                Morning Scoop
+            </a>
+
+            <div class="d-lg-none">
+                <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#BookingModal">Suggestions</button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="special.html">Special Articles</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="alpha.html">Dictionary</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="countries.html">About Countries</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-5 col-12 m-auto">
+                        <div class="heroText">
+
+                            <h1 class=" text-white mb-lg-5 mb-3">Morning Scoop</h1>
+
+                            <div class="c-reviews my-3 d-flex flex-wrap align-items-center">
+
+
+                                <p class="text-white w-100">Learn new <strong>words</strong> daily</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-12">
+                        <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide"
+                            data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/slide/1.png" class="img-fluid carousel-image" alt="">
+                                    </div>
+
+                                    <div class="carousel-caption">
+                                        <span class="text-white">
+                                            <i class="bi-geo-alt me-2"></i>
+
+                                        </span>
+
+                                        <h4 class="hero-text"></h4>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/slide/4.png" class="img-fluid carousel-image" alt="">
+                                    </div>
+
+                                    <div class="carousel-caption">
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="hero-text"></h4>
+
+                                            <span class="price-tag ms-4"><small></small></span>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h5 class="reviews-text mb-0 me-3"></h5>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="carousel-image-wrap">
+                                        <img src="images/slide/2.png" class="img-fluid carousel-image" alt="">
+                                    </div>
+
+                                    <div class="carousel-caption">
+                                        <div class="d-flex align-items-center">
+                                            <h4 class="hero-text"></h4>
+
+                                            <span class="price-tag ms-4"><small></small></span>
+                                        </div>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <h5 class="reviews-text mb-0 me-3"></h5>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>-->
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="menu-image-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/scoop_homevideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="overlay"></div>
+        </section>
+
+        <section class="menu section-padding">
+            <div class="container">
+                <h1>Dictionary</h1>
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="text-center mb-lg-5 mb-4"></h2>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/A/15_5.PNG" class="img-fluid menu-image" alt="">
+
+                                <span class="menu-tag bg-warning"></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/A/15_2.PNG" class="img-fluid menu-image" alt="">
+
+                                <span class="menu-tag bg-warning"></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/A/15_3.PNG" class="img-fluid menu-image" alt="">
+
+                                <span class="menu-tag bg-warning"></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="mb-lg-5 mb-4">
+                            ................................................................................................................................................
+                        </h2>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/A/16_1.PNG" class="img-fluid menu-image" alt="">
+
+                                <span class="menu-tag bg-warning"></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/A/16_2.PNG" class="img-fluid menu-image" alt="">
+
+                                <span class="menu-tag bg-warning"></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb">
+                            <div class="menu-image-wrap">
+                                <img src="images/A/16_3.PNG" class="img-fluid menu-image" alt="">
+
+                                <span class="menu-tag bg-warning"></span>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                    <hr style="color: white;">
+                    <button href="alpha.html" style="font-size: large; font-weight: bold;"><a href="alpha.html">
+                            More</a></button>
+                </div>
+
+
+                <div class="menu section-padding" class="container">
+                    <h1>Fun Facts about English</h1>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <h2 class="text-center mb-lg-5 mb-4"></h2>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/alpha.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alphabet Evolution</h5>
+                                    <p class="card-text" style="font-weight: bold;">The English alphabet originally had
+                                        24 letters. The letters "j"
+                                        and "u" were
+                                        later added, evolving from the letters "i" and "v" respectively.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/pan.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pangrams</h5>
+                                    <p class="card-text" style="font-weight: bold;">A pangram is a sentence that uses
+                                        every letter of the alphabet
+                                        at least once. An example is "The quick brown fox jumps over a lazy dog," which
+                                        is often used to test fonts and keyboards.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/french.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">French Influence</h5>
+                                    <p class="card-text" style="font-weight: bold;">Due to the Norman Conquest in 1066,
+                                        French became the language
+                                        of the English ruling class for about 300 years. This influence left a lasting
+                                        impact on the English language, with many French words becoming part of the
+                                        vocabulary.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <h2 class="mb-lg-5 mb-4">
+                                ................................................................................................................................................
+                            </h2>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/usa.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">No Official Language</h5>
+                                    <p class="card-text" style="font-weight: bold;">Unlike many other countries, the
+                                        United States does not have an
+                                        official language at the federal level. English is the de facto language, but
+                                        there is no official designation.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/shake.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shakespeare's Influence</h5>
+                                    <p class="card-text" style="font-weight: bold;">William Shakespeare contributed more
+                                        than 1,700 words to the
+                                        English language. Some examples include "eyeball," "bedazzle," and "luggage."
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/contro.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Contronyms</h5>
+                                    <p class="card-text" style="font-weight: bold;">English has words that are their own
+                                        opposites, known as
+                                        contronyms. For instance, "cleave" can mean to cling together or to split apart,
+                                        and "sanction" can mean both to approve and to impose a penalty.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h2 class="mb-lg-5 mb-4">
+                                ................................................................................................................................................
+                            </h2>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/rythm.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Longest Word</h5>
+                                    <p class="card-text" style="font-weight: bold;">The longest word in the English
+                                        language without a vowel is
+                                        "rhythms."</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/vowel.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Vowel Variability</h5>
+                                    <p class="card-text" style="font-weight: bold;">English has a high degree of vowel
+                                        variability compared to many
+                                        other languages, making it challenging for non-native speakers to master
+                                        pronunciation.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="card">
+                                <img class="card-img-top" src="/images/facts/e.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Most Common Letter</h5>
+                                    <p class="card-text" style="font-weight: bold;">The most commonly used letter in the
+                                        English language is "e,"
+                                        while the least used is "z."</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+
+        <section class="BgImage"></section>
+
+        <section class="news section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <h2 class="text-center mb-lg-5 mb-4">Follow us on Instagram</h2>
+
+
+
+                    <div class=" d-flex align-items-center justify-content-center">
+                        <div>
+                            <a href="news-detail.html">
+                                <img src="images/qrinsta.PNG" class="img-fluid news-image" alt="">
+                            </a>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        -->
+
+    </main>
+
+    <footer class="site-footer section-padding">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+                    <h4 class="text-white mb-4 me-5">Morning Scoop </h4>
+                    <h6 class="text-white mb-4 me-5">Authors Portfolio - <a target="_blank"
+                            href="https://kirandeshmukhmath.github.io/">Click Here</a>
+                    </h6>
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Location</h6>
+
+                    <p>Yelahanka, Bengaluru, Karnataka, India 560097</p>
+
+                    <a href="https://goo.gl/maps/i3QWYbHtmbj6FEDA7" target="_blank"
+                        class="custom-btn btn btn-dark mt-2">Directions</a>
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Opening Hours</h6>
+
+                    <p class="mb-2">Monday - Friday</p>
+
+                    <p>10:00 AM - 08:00 PM</p>
+
+                    <p>Tel: <a href="tel: 010-02-0340" class="tel-link">+91-8147357822</a></p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Social</h6>
+
+                    <ul class="social-icon">
+
+
+                        <li><a href="https://www.instagram.com/morning_scoop/" target="_blank"
+                                class="social-icon-link bi-instagram"></a></li>
+
+                        <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank"
+                                class="social-icon-link bi-twitter"></a></li>
+
+                        <li><a href="https://www.linkedin.com/in/kiran-deshmukhmath-a8ab86193/"
+                                class="social-icon-link bi-linkedin"></a></li>
+                    </ul>
+
+                    <p class="copyright-text tooplate-mt60">Copyright © 2024 Morning Scoop
+                        <br>Design: <a rel="nofollow" href="#" target="_blank">Kiran
+                            Deshmukhmath</a>
+                    </p>
+
+                </div>
+
+            </div><!-- row ending -->
+
+        </div><!-- container ending -->
+
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="mb-0">Reserve a table</h3>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body d-flex flex-column justify-content-center">
+                    <div class="booking">
+
+                        <form class="booking-form row" role="form" action="#" method="post">
+                            <div class="col-lg-6 col-12">
+                                <label for="name" class="form-label">Full Name</label>
+
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name"
+                                    required>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="email" class="form-label">Email Address</label>
+
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                    placeholder="your@email.com" required>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="phone" class="form-label">Phone Number</label>
+
+                                <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                    class="form-control" placeholder="123-456-7890">
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="people" class="form-label">Number of persons</label>
+
+                                <input type="text" name="people" id="people" class="form-control"
+                                    placeholder="12 persons">
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="date" class="form-label">Date</label>
+
+                                <input type="date" name="date" id="date" value="" class="form-control">
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <label for="time" class="form-label">Time</label>
+
+                                <select class="form-select form-control" name="time" id="time">
+                                    <option value="5" selected>5:00 PM</option>
+                                    <option value="6">6:00 PM</option>
+                                    <option value="7">7:00 PM</option>
+                                    <option value="8">8:00 PM</option>
+                                    <option value="9">9:00 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Special Request</label>
+
+                                <textarea class="form-control" rows="4" id="message" name="message"
+                                    placeholder=""></textarea>
+                            </div>
+
+                            <div class="col-lg-4 col-12 ms-auto">
+                                <button type="submit" class="form-control">Submit Request</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
